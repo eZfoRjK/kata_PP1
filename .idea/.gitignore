@@ -1,3 +1,9 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+# IntelliJ IDEA files
+.idea/
+
+# Build output directory
+target/
