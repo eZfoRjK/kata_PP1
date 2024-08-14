@@ -1150,7 +1150,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="295" parent="1" name="shemakata">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-08-14.16:41:48</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-08-14.17:19:34</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb3_general_ci</CollationName>
     </schema>
     <schema id="296" parent="1" name="sys">
@@ -1189,25 +1189,28 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Plugin>caching_sha2_password</Plugin>
     </user>
     <table id="305" parent="295" name="users">
-      <Engine>MyISAM</Engine>
+      <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
     <column id="306" parent="305" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>5</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="307" parent="305" name="age">
-      <DasType>tinyint|0s</DasType>
+    <column id="307" parent="305" name="name">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="308" parent="305" name="lastName">
       <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="309" parent="305" name="name">
-      <DasType>varchar(255)|0s</DasType>
+    <column id="309" parent="305" name="age">
+      <DasType>tinyint|0s</DasType>
+      <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <index id="310" parent="305" name="PRIMARY">

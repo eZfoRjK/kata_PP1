@@ -33,10 +33,10 @@ public class UserDaoHibernateImpl implements UserDao {
                     "age TINYINT NOT NULL, " +
                     "PRIMARY KEY (id))").executeUpdate();
             transaction.commit();
-            logger.log(Level.INFO, "Табличка users создана");
+            logger.log(Level.INFO, "Таблицы users создана");
         } catch (HibernateException e) {
             if (transaction != null) transaction.rollback();
-            logger.log(Level.SEVERE,"Проблема при создании таблички ", e);
+            logger.log(Level.SEVERE,"Проблема при создании таблицы ", e);
         }
     }
 
